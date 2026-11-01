@@ -1,0 +1,104 @@
+{
+  "productos": [
+    {
+      "nombre": "Combo iniciación",
+      "categoria": "Combos",
+      "precio": 5490,
+      "moneda": "$U",
+      "stock": 4,
+      "descripcion": "Incluye: caña telescópica 2,10 m, reel frontal 4000 y línea monofilamento 0,30 mm. Ejemplo para probar el catálogo.",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "nombre": "Combo señuelos x6",
+      "categoria": "Combos",
+      "precio": 2190,
+      "moneda": "$U",
+      "stock": 7,
+      "descripcion": "Incluye: 6 señuelos minnow 9 cm y un pack de anzuelos Nº 4. Ejemplo para probar el catálogo.",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "nombre": "Caña telescópica 2,10 m",
+      "categoria": "Cañas",
+      "precio": 1890,
+      "moneda": "$U",
+      "stock": 12,
+      "descripcion": "Caña liviana para pesca de costa y río. Ejemplo para probar el catálogo.",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "nombre": "Reel frontal 4000",
+      "categoria": "Reels",
+      "precio": 3250,
+      "moneda": "$U",
+      "stock": 3,
+      "descripcion": "Reel con 5 rulemanes y freno frontal. Ejemplo para probar el catálogo.",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "nombre": "Señuelo minnow 9 cm",
+      "categoria": "Señuelos",
+      "precio": 420,
+      "moneda": "$U",
+      "stock": 25,
+      "descripcion": "Señuelo flotante con dos anzuelos triples. Ejemplo para probar el catálogo.",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "nombre": "Cuchara ondulante 18 g",
+      "categoria": "Señuelos",
+      "precio": 290,
+      "moneda": "$U",
+      "stock": 0,
+      "descripcion": "Ejemplo de producto sin stock.",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "nombre": "Anzuelos Nº 4 (pack x 20)",
+      "categoria": "Anzuelos",
+      "precio": 180,
+      "moneda": "$U",
+      "stock": 40,
+      "descripcion": "Anzuelos de acero al carbono. Ejemplo para probar el catálogo.",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "nombre": "Línea monofilamento 0,30 mm",
+      "categoria": "Líneas y accesorios",
+      "precio": 650,
+      "moneda": "$U",
+      "stock": 8,
+      "descripcion": "Bobina de 300 m. Ejemplo para probar el catálogo.",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "nombre": "Caja de pesca doble fondo",
+      "categoria": "Líneas y accesorios",
+      "precio": null,
+      "moneda": "$U",
+      "stock": 5,
+      "descripcion": "Ejemplo de producto sin precio cargado: muestra 'Consultar precio'.",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "nombre": "Gorro con protección solar",
+      "categoria": "Indumentaria",
+      "precio": 25,
+      "moneda": "US$",
+      "stock": 6,
+      "descripcion": "Ejemplo de precio en dólares.",
+      "imagen": "",
+      "visible": true
+    }
+  ]
+}

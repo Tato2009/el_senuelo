@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; frame-src https://www.google.com https://maps.google.com; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#0f2a44">
+  <title>El Señuelo · Casa de Pesca</title>
+  <meta name="description" content="Catálogo de artículos de pesca de El Señuelo, en Tomás Gomensoro. Mirá lo que hay en stock y consultá la disponibilidad por WhatsApp.">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icono-192.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="saltar" href="#catalogo">Ir al catálogo</a>
+
+  <header class="cabecera">
+    <div class="cabecera__in">
+      <a class="marca" href="./" aria-label="El Señuelo, Casa de Pesca. Inicio">
+        <img src="img/icono-192.png" width="44" height="44" alt="">
+        <span class="marca__texto">
+          <strong id="marca-nombre">El Señuelo</strong>
+          <small id="marca-sub">Casa de Pesca</small>
+        </span>
+      </a>
+      <a class="btn btn--wsp btn--chico" id="wsp-cabecera" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__in">
+        <img class="hero__logo" src="img/logo.jpg" width="600" height="605" alt="El Señuelo, Casa de Pesca">
+        <div class="hero__texto">
+          <div class="hero__fila">
+            <h1>Todo para tu próxima salida de pesca</h1>
+            <div class="menu" id="menu">
+              <button type="button" class="menu__boton" id="menu-boton" aria-expanded="false" aria-controls="menu-lista" aria-label="Elegir categoría">
+                <svg viewBox="0 0 120 84" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M0 80q7.5-4 15 0t15 0 15 0 15 0 15 0 15 0 15 0 15 0" stroke-width="1.6" opacity=".45"/>
+                  <g class="cana">
+                    <path d="M9 67Q60 53 104 26"/>
+                    <path d="M5 68.5 16 65" stroke-width="5"/>
+                    <path d="M30 61v4"/>
+                    <circle cx="30" cy="70.5" r="5.5"/>
+                    <circle cx="30" cy="70.5" r="1.6" fill="currentColor" stroke="none"/>
+                    <path d="M104 26Q108 42 104 56" stroke-width="1.2"/>
+                    <path d="M104 56v3q0 2.5-2.5 2.5" stroke-width="1.4"/>
+                    <g class="pez">
+                      <ellipse cx="104" cy="67" rx="4.5" ry="9" fill="currentColor"/>
+                      <path d="M104 75 99 83h10z" fill="currentColor"/>
+                      <circle cx="104" cy="63" r="1.1" fill="#0f2a44" stroke="none"/>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <div class="menu__lista" id="menu-lista" hidden></div>
+            </div>
+          </div>
+          <p>Mirá los artículos, fijate el stock y consultá la disponibilidad por WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="catalogo" aria-labelledby="titulo-catalogo">
+      <h2 class="sr" id="titulo-catalogo">Artículos</h2>
+      <p class="conteo" id="conteo" aria-live="polite"></p>
+      <ul class="grilla" id="grilla"></ul>
+      <div class="estado" id="estado" hidden>
+        <p id="estado-texto"></p>
+        <button type="button" class="btn btn--navy" id="estado-boton"></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__in">
+      <div class="pie__datos">
+        <p class="pie__nombre"><strong id="pie-nombre">El Señuelo</strong> · <span id="pie-sub">Casa de Pesca</span></p>
+        <p id="pie-direccion" hidden></p>
+        <p id="pie-contacto" hidden></p>
+      </div>
+      <div class="pie__mapa" id="pie-mapa" hidden>
+        <iframe id="mapa" title="Mapa con la ubicación de El Señuelo" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" width="460" height="190"></iframe>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="detalle" aria-labelledby="det-nombre">
+    <div class="det">
+      <button type="button" class="det__cerrar" id="det-cerrar" aria-label="Cerrar">×</button>
+      <div class="det__img"><img id="det-img" alt="" width="480" height="480"></div>
+      <div class="det__info">
+        <p class="cat" id="det-cat"></p>
+        <h2 id="det-nombre"></h2>
+        <p class="det__precio" id="det-precio"></p>
+        <p id="det-stock"></p>
+        <p class="det__desc" id="det-desc"></p>
+        <a class="btn btn--wsp" id="det-wsp" href="#" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
