@@ -1,0 +1,85 @@
+# Configuración del panel de administración (Pages CMS, https://app.pagescms.org)
+# Solo entra quien tenga acceso de escritura a este repositorio en GitHub.
+
+media:
+  input: img/productos
+  output: img/productos
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: productos
+    label: Productos
+    type: file
+    path: data/productos.json
+    format: json
+    fields:
+      - name: productos
+        label: Lista de productos
+        type: object
+        list: true
+        fields:
+          - name: nombre
+            label: Nombre
+            type: string
+            required: true
+          - name: categoria
+            label: Categoría
+            type: select
+            required: true
+            options:
+              values:
+                - Combos
+                - Cañas
+                - Reels
+                - Señuelos
+                - Anzuelos
+                - Líneas y accesorios
+                - Indumentaria
+                - Otros
+          - name: precio
+            label: Precio (vacío = "Consultar precio")
+            type: number
+          - name: moneda
+            label: Moneda
+            type: select
+            default: "$U"
+            options:
+              values:
+                - "$U"
+                - "US$"
+          - name: stock
+            label: Stock (cantidad)
+            type: number
+            required: true
+          - name: descripcion
+            label: Descripción
+            type: text
+          - name: imagen
+            label: Foto
+            type: image
+          - name: visible
+            label: Mostrar en el catálogo
+            type: boolean
+            default: true
+
+  - name: sitio
+    label: Datos del negocio
+    type: file
+    path: data/sitio.json
+    format: json
+    fields:
+      - name: nombre
+        label: Nombre del negocio
+        type: string
+      - name: subtitulo
+        label: Subtítulo
+        type: string
+      - name: whatsapp
+        label: WhatsApp (con código de país, solo números. Ej. 59899123456)
+        type: string
+      - name: telefono
+        label: Teléfono que se muestra en el pie (ej. 098 926 566)
+        type: string
+      - name: direccion
+        label: Dirección (también se usa para el mapa)
+        type: string
